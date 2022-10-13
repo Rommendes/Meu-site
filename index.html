@@ -10,12 +10,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2? família= Mochiy+Pop+One &family= Roboto:wght@100;300;400 & display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+   
 </head>
-<body>
+
+<body onresize="mudouTamanho()">
     <header>
         <h1>Título</h1>
-        <menu>
+        <span id="burguer" class="material-icons" onclick="clickmenu()">reorder</span>
+
+        <menu id="itens">
                 <ul>
                     <li><a href="#" >Home</a></li>
                     <li><a href="#">Informações</a></li>
@@ -24,18 +29,38 @@
                 </ul>
         </menu>
     </header>
-        <section>
-            <h2> Subtítulo</h2>
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste tempore illo pariatur dolor nulla veritatis molestias? Ipsum voluptate laborum culpa doloremque cum repellendus aperiam itaque qui quibusdam assumenda. Eos, blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat possimus sed, ad eos dolorum architecto saepe minima laboriosam in cumque repudiandae quis odio sunt ipsa consequuntur cupiditate quo eaque.</p>
-            </div>
-            <div id="formulario">
-                <h2>Formulário</h2>
-                Nome<input type="text">
-            </div>
-        </section>
-    <footer>
-        <p>Site criado por <a href="https://github.com/Rommendes">https://github.com/Rommendes</a></p>
-    </footer>
+
+        <main>
+            <article>
+                <h2> Subtítulo</h2>
+                
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste tempore illo pariatur dolor nulla veritatis molestias? Ipsum voluptate laborum culpa doloremque cum repellendus aperiam itaque qui quibusdam assumenda. Eos, blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat possimus sed, ad eos dolorum architecto saepe minima laboriosam in cumque repudiandae quis odio sunt ipsa consequuntur cupiditate quo eaque.</p>
+                
+                <!--<div id="formulario">
+                    <h2>Formulário</h2>
+                    Nome: <input type="text">
+                </div>-->
+            </article>    
+          
+               <script>
+            function clickmenu(){
+                if(itens.stylo.display == 'none'){
+                    itens.stylo.display = 'block'
+                }else{
+                    itens.style.display = 'none'
+                }
+            }
+            function mudouTamanho(){
+                if(window.innerWidth >= 768){
+                    itens.style.display = 'block'
+                }else{
+                    itens.style.display = 'none'
+                }
+            }
+            </script>
+        </main>
+       <!-- <footer>
+            <p>Site criado por <a href="https://github.com/Rommendes">https://github.com/Rommendes</a></p>
+                </footer>-->
 </body>
 </html>
