@@ -12,12 +12,13 @@
     <link href="https: //fonts.googleapis.com/css2? família= Mochiy+Pop+One &family= Roboto:wght@100;300;400 & display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link rel="stylesheet" href="estilos/responsivo.css">
    
 </head>
 
 <body onresize="mudouTamanho()">
     <header>
-        <h1>Título</h1>
+        <h1>Developing Website 1</h1>
         <span id="burguer" class="material-icons" onclick="clickmenu()">reorder</span>
 
         <menu id="itens">
@@ -31,36 +32,63 @@
     </header>
 
         <main>
-            <article>
-                <h2> Subtítulo</h2>
+            
+                <section class="normal" >
+                    <h2> Poetizar a web</h2>
+                </section>   
+
+                <section class="imagem">
+                    <p>
+                        POETIZAR A WEB É UM PRAZER,<br>
+                        UM DEVER DO WEB POETA <br>
+                        SE ELE ASSIM NÃO FIZER, <br>
+                        A VIDA FICA SEM COR <br>
+                        ELEVA MUROS INDECIFRÁVEIS <br>
+                        TRAVA SUAS IDÉIAS <br>
+                        NÃO CODIFICA SEUS CÓDIGOS <br>
+                    </p>
+                </section>
+
+                <section class="normal">
+                    POETIZAR A WEB É CONSTRUIR  VÍNCULOS <br>
+                    ATRAVÉS DOS CÓDIGOS <br>
+                    DE MANEIRA VIVA E SUBJETIVA, <br>
+                    É TRAZER O ALEGRIA COM ALGORITMOS <br>
+
+                </section>
+                <section class="imagem">
+                    POETIZAR A WEB É DERRUBAR MUROS <br>
+                    TRAZER SENTIDO
+                    DE FORMA QUE A VIDA
+                    SEJA CODIFICADA COM LEVEZA.
+                </section>
                 
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste tempore illo pariatur dolor nulla veritatis molestias? Ipsum voluptate laborum culpa doloremque cum repellendus aperiam itaque qui quibusdam assumenda. Eos, blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat possimus sed, ad eos dolorum architecto saepe minima laboriosam in cumque repudiandae quis odio sunt ipsa consequuntur cupiditate quo eaque.</p>
-                
-                <!--<div id="formulario">
-                    <h2>Formulário</h2>
-                    Nome: <input type="text">
-                </div>-->
-            </article>    
-          
-               <script>
-            function clickmenu(){
-                if(itens.stylo.display == 'none'){
-                    itens.stylo.display = 'block'
-                }else{
-                    itens.style.display = 'none'
-                }
-            }
-            function mudouTamanho(){
-                if(window.innerWidth >= 768){
-                    itens.style.display = 'block'
-                }else{
-                    itens.style.display = 'none'
-                }
-            }
-            </script>
+            <script>
+                /*ESTA Function AO SER CLICADA MOSTRA O MENU, AO SER CLICADA NOVAMENTE, ESCONDE O MENU */
+                   function clickmenu (){
+                        if(itens.style.display =='block'){
+                            itens.style.display = 'none'
+                        }else{
+                             itens.style.display = 'block'
+                        }
+                    }
+                    /*Esta função mostra o bloco de ítens (menu) se a tela for grande
+                    ---------------------------------
+                    innerWidth => largura da tela */
+                    function mudouTamanho(){
+                        if(window.innerWidth >= 768){
+                            itens.style.display = 'block'
+                        }else{
+                            itens.style.display = 'none'
+                        }
+                    }
+                </script>
+
+
         </main>
-       <!-- <footer>
-            <p>Site criado por <a href="https://github.com/Rommendes">https://github.com/Rommendes</a></p>
-                </footer>-->
+       <footer>
+        <p>Colocar em prática o que estou aprendendo nos cursos de HTML5, CSS3 e JavaScript.</p>
+        <p>Site criado por <a href="https://github.com/Rommendes">https://github.com/Rommendes</a></p>
+        </footer>
 </body>
 </html>
