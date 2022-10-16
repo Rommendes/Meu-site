@@ -1,15 +1,36 @@
 @charset "UTF-08";
 @media screen and (min-width: 600px) {
+    header{
+        padding-bottom: 0px;
+        width: 100vw;
+        height: 200px;
+    }
+    header > h1{
+        padding: 55px;
+    }
     span#burguer{
         display: none;
     }
     menu{
         display: block;
+        padding-bottom: 10px;
     }
+
     menu > ul > li {
         display: inline-block;
     }
+    menu > ul > li > a{
+        display: block;
+        border-radius: 5px;box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349);
+        width: 108px;
+    }
+
     main{
-       width: 768px; 
+       width: 1680px; 
     }
 }
+   
+
+
+       
+    

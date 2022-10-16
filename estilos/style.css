@@ -15,30 +15,35 @@
     padding: 0px;
     box-sizing: border-box;
     font-family:'Roboto', arial;
+    font-size: 1em;
 }
 html, body{
-    background: #EAEAEA;
-    min-width: 100%;
+    background: white;
+    min-width: 70vh;
+    overflow-x: hidden;/*FIXA A BARRA DE ROLAGEM*/
 
 }
 header{
     background-color: #F80032;
-    padding-top: 15px;
     text-align: center;
+    
+    
 }
 
 header > h1{
     font-family: 'Mochiy Pop One', sem serifa;
     color: white;
-    font-size: 3em;
+    font-size: 2em;
     width: normal;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+   
     font-variant: small-caps; /*Continuo tendo as letras maísculas, mas com a primeira letra maior*/
     
 }
 span#burguer{
-    background-color: #d6d5d5;
+    background-color: #F80032;
     color: var(--cor1);
     display: block;
     text-align: center;
@@ -49,20 +54,33 @@ span#burguer:hover{
     background-color: gray;
 }
 menu{
-    display: none;
+    display: none; 
+}
+menu#itens{
+    border-radius: 5px;
+    border-color: #d6d5d5;
+   
+   
 }
 menu > ul{
     list-style-type: none;
+    padding-bottom: 0px;
+    
+}
+menu > li{
+    width: 108px;
+    
 }
 
 menu >ul > li > a{
     display: block;
-    padding: 10px;
     text-decoration: none;
     text-align: center;
     color: white;
     background-color: #6CC947;
-    border-top: 2px solid var(--cor4);
+    border-top: 0px solid var(--cor4);
+    padding: 10px;
+    
 }
 menu > ul > li >a:hover{
     background-color: var(--cor2);
@@ -70,17 +88,18 @@ menu > ul > li >a:hover{
 
 main{
     font:var(--fonte-padrao);
-    background-color: #d6d5d5;
-    width: 90vw;
+    background-color: rgb(198, 22, 22);
+    min-width: 100vh;
     margin: auto;
-    border-radius: 0px 0px 10px 10px;
-    padding: 10px;
+    padding: 0px;
     margin-bottom: 10px;
-    box-shadow:-3px 3px 5px rgba(0, 0, 0, 0.25);
 }
+   
+
 article > h2{
     font-family: 'Mochiy Pop One', sem serifa;
     color: #F80032;
+   
 }
 #formulario{
     margin: auto;
@@ -90,6 +109,47 @@ article > h2{
     font-family: 'Mochiy Pop One', sem serifa;
     color: #F80032;
 }
+section > h2{
+    font-size: 2em;
+}
+section.normal{
+    background-color:#EAEAEA;
+    color: #F80032;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em; /* espaçament0 entre linhas*/
+}
+section.imagem{
+    background-color: #F80032;
+    color: #EAEAEA;
+    box-shadow: inset/* sombra para dentro */ 6px 6px 13px 0px rgba(0, 0, 0, 0.473); 
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.454);
+    width: 400px;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+    
+}
+section#normal > h2{
+    font-variant: small-caps;
+    font-family: 'Mochiy Pop One', sem serifa;
+}
+
+section#web1{
+    background-image: url("/imagens/cores.jpg");
+    background-position: right center;
+}
+section#web2{
+    background-image: url("/imagens/home.jpg");
+}
 footer{
     background-color: #EAEAEA;
+    padding: 10px;
 }
