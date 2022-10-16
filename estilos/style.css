@@ -149,6 +149,12 @@ section#web1{
 section#web2{
     background-image: url("/imagens/home.jpg");
 }
+fieldset {
+    border-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+    border-style: groove;
+}
 footer{
     background-color: #EAEAEA;
     padding: 10px;
