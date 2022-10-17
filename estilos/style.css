@@ -27,7 +27,6 @@ header{
     background-color: #F80032;
     text-align: center;
     
-    
 }
 
 header > h1{
@@ -42,6 +41,9 @@ header > h1{
     font-variant: small-caps; /*Continuo tendo as letras maísculas, mas com a primeira letra maior*/
     
 }
+header > menu > a > img{
+    width: 50px;
+}
 span#burguer{
     background-color: #F80032;
     color: var(--cor1);
@@ -49,16 +51,19 @@ span#burguer{
     text-align: center;
     padding: 10px;
     cursor: pointer;
+    text-decoration: none;
+    font-size: 30px;
 }
 span#burguer:hover{
     background-color: gray;
 }
+
 menu{
     display: none; 
 }
 menu#itens{
     border-radius: 5px;
-    border-color: #d6d5d5;
+   
    
    
 }
@@ -80,6 +85,7 @@ menu >ul > li > a{
     background-color: #6CC947;
     border-top: 0px solid var(--cor4);
     padding: 10px;
+    margin-bottom: 1px;
     
 }
 menu > ul > li >a:hover{
@@ -88,7 +94,6 @@ menu > ul > li >a:hover{
 
 main{
     font:var(--fonte-padrao);
-    background-color: rgb(198, 22, 22);
     min-width: 100vh;
     margin: auto;
     padding: 0px;
@@ -103,7 +108,7 @@ article > h2{
 }
 #formulario{
     margin: auto;
-    padding: 10px;
+    padding-right: 30px;
 }
 #formulario > h2{
     font-family: 'Mochiy Pop One', sem serifa;
@@ -143,17 +148,23 @@ section#normal > h2{
 }
 
 section#web1{
-    background-image: url("/imagens/cores.jpg");
+    background-image: url("/imagens/web1.jpg");
     background-position: right center;
 }
 section#web2{
-    background-image: url("/imagens/home.jpg");
+    background-image: url("/imagens/Web2.jpg");
 }
 fieldset {
     border-color: rgb(255, 0, 0);
     border-radius: 10px;
     text-align: center;
     border-style: groove;
+    margin: 0px;
+}
+#dados_pessoais{
+    text-align: left;
+    margin-left: 10px;
+
 }
 footer{
     background-color: #EAEAEA;

@@ -1,12 +1,29 @@
 @charset "UTF-08";
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 667px) and (max-width: 1920px){
     header{
         padding-bottom: 0px;
         width: 100vw;
         height: 200px;
     }
+    /*header > menu > a > img{
+        width: 50px;} */
+    
+    menu#voltar_imagem{
+        width: 50px;
+        padding-left: 20px;
+        border-radius: 50%;
+    }
+    
+    menu#voltar_imagem > a > img{
+    border-radius: 50%;
+    transform: translate(-3px, -3px);
+    box-shadow:5px 5px 10px rgba(37, 37, 37, 0.6); ;
+    transition: transform 2s, border 2s;
+  
+}
+
     header > h1{
-        padding: 55px;
+        padding: 50px;
     }
     span#burguer{
         display: none;

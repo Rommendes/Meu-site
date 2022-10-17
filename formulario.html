@@ -15,68 +15,70 @@
     <link rel="stylesheet" href="estilos/responsivo.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
-        <h1>Formulários</h1>
-            <p><a href="index.html"><input type="submit" value="Voltar" ></a></p>
+        <h1>Formulário</h1>
+        <a href="index.html"><span id="burguer" class="material-icons" onclick="clickmenu()"><span class="material-icons">
+            keyboard_return keyboard_return 
+            </span></span></a>
 
+        <menu id="voltar_imagem">
+                    <a href="index.html" ><img src="imagens/Voltar.png" alt=""></a>
+                    
+        </menu>
     </header>
-        <form action="/pagina_processa_dados_do_form.php" method="post" autocomplete="on">
-            <h1>Orçamento</h1>
+        <form action="/pagina_processa_dados_do_form.php" method="post" autocomplete="on" id="formulario">
+            
             <section>
+                <h2>Dados pessoais</h2>
                 <fieldset>
-                    <fieldset>
-                        <legend>Dados pessoais</legend>
-                        <div>
-                           <label for="nome">1. Nome <br></label>
-                           <input type="text" id="iname" minlength="5" maxlength="20" size="40" required placeholder="Nome">
-                           <label for="sobre"> </label>
-                           <input type="text" id="isobre" minlength="5" maxlength="20" size="40"required placeholder="Sobrenome">
-                    
-                        </div>
-                        <div>
-                            <label for="nome"> 2. Contato <br>
-                           <input type="text" id="name" maxlength="30" size="40" placeholder="E-mail" required>
-                           <label for="telefone">  </label>
-                           <input type="text" id="telefone" maxlength="30" size="40" placeholder="telefone" required>
-                    
-                        </div>
-                        <div>
-                            <label for="localizacao"> 3. Endereço <br>
-                           <input type="text" id="localizacao" placeholder="Rua, número, bairro" maxlength="30" size="40" requierid>
-                    
-                           <label for="cep">  </label>
-                           <input type="texto" id="telefone"  placeholder="CEP 00.000-000" minlength="9" maxlength="30"size="40" required> <br>
-                           <label for="estado">4. Estado </label>
-                        <select name="estado" id="estado">
-                            <option value="select">---Escolha---</option>
-                    
+                        <div id="dados_pessoais">
+                           
+                               <label for="nome">1. Nome <br></label>
+                               <input type="text" id="iname" minlength="5" maxlength="20" size="40" required placeholder="Nome">
+                               <label for="sobre"> </label>
+                               <input type="text" id="isobre" minlength="5" maxlength="20" size="40"required placeholder="Sobrenome"> <br>
+                        
+                         
+                                <label for="nome"> 2. Contato <br>
+                               <input type="text" id="name" maxlength="30" size="40" placeholder="E-mail" required>
+                               <label for="telefone">  </label>
+                               <input type="text" id="telefone" maxlength="30" size="40" placeholder="telefone" required> <br>
+                            
+                                <label for="localizacao"> 3. Endereço <br>
+                               <input type="text" id="localizacao" placeholder="Rua, número, bairro" maxlength="30" size="40" requierid>
+                               <label for="cep">  </label>
+                               <input type="texto" id="telefone"  placeholder="CEP 00.000-000" minlength="9" maxlength="30"size="40" required> <br>
+                               
+                               <label for="pais"> 4. País </label>
+                                <select name="pais" id="pais">
+                                    <option value="select">---Escolha---</option>
                                     <optgroup>
-                                    <option value="RS">RIO GRANDE DO SUL </option>
-                                    <option value="SC">SANTA CATARINA</option>
-                                    <OPtion value="RN">RIO GRANDE DO NORTE</OPtion>
-                                    <option value="PR">Paraná</option>
-                                    <option value="SP">São Paulo</option>
-                                    <option value="RJ">Rio de Janeiro</option>
-                                    <option value="ES">Espírito Santo</option>
-                                    </optgroup>
-                        </select>
-                           <br>
-                            <label for="pais">4. País </label>
-                            <select name="pais" id="pais">
+                                        <option value="AR">ARGENTINA</option>
+                                        <option value="AF">ÁFRICA DO SUL</option>
+                                        <option value="BE">BÉLGICA</option>
+                                        <option value="BR">BRASIL</option>
+                                        <option value="CV">CABO VERDE</option>
+                                        <option value="RU">FEDERAÇÃO RUSSA</option>
+                                        <OPtion value="CZ">REPÚBLICA UNIDA DA TANZÂNIA</OPtion>
+                                     </optgroup>
+                                     </select>
+                                     <br>
+                               <label for="estado">5. Estado </label>
+                            <select name="estado" id="estado">
                                 <option value="select">---Escolha---</option>
-                                <optgroup>
-                                    <option value="AR">ARGENTINA</option>
-                                    <option value="AF">ÁFRICA DO SUL</option>
-                                    <option value="BE">BÉLGICA</option>
-                                    <option value="BR">BRASIL</option>
-                                    <option value="CV">CABO VERDE</option>
-                                    <option value="RU">FEDERAÇÃO RUSSA</option>
-                                    <OPtion value="CZ">REPÚBLICA UNIDA DA TANZÂNIA</OPtion>
-                                 </optgroup>
-                                 </select>
+                                        <optgroup>
+                                        <option value="RS">RIO GRANDE DO SUL </option>
+                                        <option value="SC">SANTA CATARINA</option>
+                                        <OPtion value="RN">RIO GRANDE DO NORTE</OPtion>
+                                        <option value="PR">Paraná</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        </optgroup>
+                            </select>
+                               <br>
                         </div>
-                    </fieldset>
                 </fieldset>
             </section>
         </form>
