@@ -1,10 +1,12 @@
 @charset "UTF-08";
+@media screen and (min-width: 600px){
+}
 @media screen and (min-width:600px) and (max-width: 1920px){
     header{
         padding-bottom: 0px;
         width: 100vw;
         height: 200px;
-    
+        padding-top: 10px;
     }
     header > h1{
         font-size: 3em;
@@ -15,17 +17,19 @@
     menu#voltar_imagem{
         width: 50px;
         padding-left: 20px;
-        border-radius: 50%;
+        padding-bottom: 0px;
     }
-    
+    #voltar_imagem{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
     menu#voltar_imagem > a > img{
     border-radius: 50%;
     transform: translate(-3px, -3px);
     box-shadow:5px 5px 10px rgba(37, 37, 37, 0.6); ;
-    transition: transform 2s, border 2s;
-  
+    transition: transform 2s, border 2s; 
 }
-
     header > h1{
         padding: 30px;
     }
@@ -36,9 +40,10 @@
         display: block;
         padding-bottom: 10px;
         background-color:#F80032;
+        padding-top: 10px;
     }
     menu > ul {
-        padding-top: 40px;
+        padding-top: 20px;
     }
 
     menu > ul > li {

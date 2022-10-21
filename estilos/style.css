@@ -2,13 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?familia=Nunito:wght@200;400;600&family=Rum+Raisin&display=swap');
 
 
-:root{
-    --cor0: black;   
-    --cor3: #F80032;
-    --cor4: #EAEAEA; 
-    --cor4: #F1F1F1; 
-    --cor5: white; 
+
+.imagem {
+    background-color: red;
+    max-width: 100%;
 }
+img {
+    width: 100%; 
+    height: auto;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -26,9 +29,8 @@ header{
     background-color: #F80032;
     text-align: center;
     height: 250px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
-
 header > h1{
     font-family: 'Rum Raisin', sans-serif;
     color: white;
@@ -36,13 +38,11 @@ header > h1{
     width: normal;
     text-align: center;
     padding-bottom: 30px;
-
     padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     letter-spacing: 1.5px;
    
     /*font-variant: small-caps; Continuo tendo as letras maísculas, mas com a primeira letra maior*/
-    
 }
 header > menu > a > img{
     width: 50px;
@@ -60,11 +60,12 @@ span#burguer{
 span#burguer:hover{
     background-color: rgba(128, 128, 128, 0.187);
 }
-
 menu{
     display: none; 
-    background-color: #EAEAEA;
-    
+    background-color: #EAEAEA;   
+}
+menu#voltar_imagem > a > img{
+    padding-top: 0px;
 }
 menu#itens{
     border-radius: 5px;
@@ -72,52 +73,34 @@ menu#itens{
 menu > ul{
     list-style-type: none;
     border-bottom: #607dfe;
-    
-    
+    padding-bottom: 20px;
 }
 menu > li{
-    width: 108px;
-    
+    width: 108px;   
 }
-
 menu >ul > li > a{
     display: block;
     text-decoration: none;
     text-align: center;
     color: white;
     background-color: #607dfe;
-    border-top: 1px solid var(--cor4);
-    padding: 10px;
-    
-    
-    
+    border-top: 1px solid white;
+    padding: 5px;
 }
 menu > ul > li >a:hover{
     background-color: gray;
 }
-
 main{
     font-family: 'Nunito';
     min-width: 100vh;
-    padding-top: 10px;
-
-    
-
-
-    
 }
 main::first-letter{
     text-transform: capitalize;
 }
-   
-
 main > section> h2{
     font-family: 'Rum Raisin', sans-serif;
     color: #F80032;
     font-size: 3em;
-    
-    
-   
 }
 #formulario{
     margin: auto;
