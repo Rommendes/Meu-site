@@ -1,10 +1,9 @@
 @charset "UTF-08";
+@import url('https://fonts.googleapis.com/css2?familia=Nunito:wght@200;400;600&family=Rum+Raisin&display=swap');
 
 
 :root{
-    --cor0: black; 
-    --cor1: #6CC947; 
-    --cor2: #EC0059; 
+    --cor0: black;   
     --cor3: #F80032;
     --cor4: #EAEAEA; 
     --cor4: #F1F1F1; 
@@ -14,7 +13,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family:'Roboto', arial;
+    font-family:'Nunito', sans-serif ;
     font-size: 1em;
 }
 html, body{
@@ -26,19 +25,23 @@ html, body{
 header{
     background-color: #F80032;
     text-align: center;
-    
+    height: 250px;
+    padding-bottom: 20px;
 }
 
 header > h1{
-    font-family: 'Mochiy Pop One', sem serifa;
+    font-family: 'Rum Raisin', sans-serif;
     color: white;
     font-size: 2em;
     width: normal;
     text-align: center;
-    padding-top: 30px;
     padding-bottom: 30px;
+
+    padding-top: 30px;
+    padding-bottom: 10px;
+    letter-spacing: 1.5px;
    
-    font-variant: small-caps; /*Continuo tendo as letras maísculas, mas com a primeira letra maior*/
+    /*font-variant: small-caps; Continuo tendo as letras maísculas, mas com a primeira letra maior*/
     
 }
 header > menu > a > img{
@@ -46,30 +49,30 @@ header > menu > a > img{
 }
 span#burguer{
     background-color: #F80032;
-    color: var(--cor1);
+    color: #607dfe;
     display: block;
     text-align: center;
-    padding: 10px;
+    padding: px;
     cursor: pointer;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 1.5em;
 }
 span#burguer:hover{
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.187);
 }
 
 menu{
     display: none; 
+    background-color: #EAEAEA;
+    
 }
 menu#itens{
     border-radius: 5px;
-   
-   
-   
 }
 menu > ul{
     list-style-type: none;
-    padding-bottom: 0px;
+    border-bottom: #607dfe;
+    
     
 }
 menu > li{
@@ -82,28 +85,38 @@ menu >ul > li > a{
     text-decoration: none;
     text-align: center;
     color: white;
-    background-color: #6CC947;
-    border-top: 0px solid var(--cor4);
+    background-color: #607dfe;
+    border-top: 1px solid var(--cor4);
     padding: 10px;
-    margin-bottom: 1px;
+    
+    
     
 }
 menu > ul > li >a:hover{
-    background-color: var(--cor2);
+    background-color: gray;
 }
 
 main{
-    font:var(--fonte-padrao);
+    font-family: 'Nunito';
     min-width: 100vh;
-    margin: auto;
-    padding: 0px;
-    margin-bottom: 10px;
+    padding-top: 10px;
+
+    
+
+
+    
+}
+main::first-letter{
+    text-transform: capitalize;
 }
    
 
-article > h2{
-    font-family: 'Mochiy Pop One', sem serifa;
+main > section> h2{
+    font-family: 'Rum Raisin', sans-serif;
     color: #F80032;
+    font-size: 3em;
+    
+    
    
 }
 #formulario{
@@ -111,15 +124,19 @@ article > h2{
     padding-right: 30px;
 }
 #formulario > h2{
-    font-family: 'Mochiy Pop One', sem serifa;
+    font-family: 'Nunito', sans-serif;
     color: #F80032;
+    
+    
 }
 section > h2{
     font-size: 2em;
+    padding-bottom: 15px;
+    padding-left: 10px;
 }
 section.normal{
     background-color:#EAEAEA;
-    color: #F80032;
+    color: black;
 }
 section{
     padding-top: 10vh;
@@ -141,10 +158,11 @@ section.imagem > p{
     padding: 5px;
     text-shadow: 1px 1px 0px black;
     
+    
 }
 section#normal > h2{
     font-variant: small-caps;
-    font-family: 'Mochiy Pop One', sem serifa;
+    font-family: 'Nerko Um', sans-serif;
 }
 
 section#web1{
@@ -160,13 +178,32 @@ fieldset {
     text-align: center;
     border-style: groove;
     margin: 0px;
+    padding-bottom: 10px;
 }
 #dados_pessoais{
     text-align: left;
     margin-left: 10px;
-
+}
+input#button{
+    background-color: #607dfe;
+    color: #EAEAEA;
+    border-color: #607dfe;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.42);
 }
 footer{
-    background-color: #EAEAEA;
-    padding: 10px;
+    background-color: gray;
+    padding: 20px;
+    color: #EAEAEA;
+    
+}
+footer > p > a{
+    text-decoration: none;
+    color: #EAEAEA ;
+}
+footer > p > a:hover{
+    background-color: #607dfe;
 }

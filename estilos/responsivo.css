@@ -1,9 +1,13 @@
 @charset "UTF-08";
-@media screen and (min-width: 667px) and (max-width: 1920px){
+@media screen and (min-width:600px) and (max-width: 1920px){
     header{
         padding-bottom: 0px;
         width: 100vw;
         height: 200px;
+    
+    }
+    header > h1{
+        font-size: 3em;
     }
     /*header > menu > a > img{
         width: 50px;} */
@@ -23,7 +27,7 @@
 }
 
     header > h1{
-        padding: 50px;
+        padding: 30px;
     }
     span#burguer{
         display: none;
@@ -31,6 +35,10 @@
     menu{
         display: block;
         padding-bottom: 10px;
+        background-color:#F80032;
+    }
+    menu > ul {
+        padding-top: 40px;
     }
 
     menu > ul > li {
@@ -44,6 +52,10 @@
 
     main{
        width: 1680px; 
+       padding-top: 20px;
+       padding-bottom: 0px;
+      padding-left: 0px;
+      
     }
 }
    
