@@ -126,6 +126,7 @@ section{
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em; /* espaçament0 entre linhas*/
+    font-size: 3vh;
 }
 section.imagem{
     background-color: #F80032;
@@ -133,6 +134,7 @@ section.imagem{
     box-shadow: inset/* sombra para dentro */ 6px 6px 13px 0px rgba(0, 0, 0, 0.473); 
     background-size: cover;
     background-attachment: fixed;
+    
 }
 section.imagem > p{
     display: inline-block;
